@@ -12,27 +12,33 @@
   <body>
 <div class="project-box">
      <header>
-     <form>
-        <input type="text" placeholder="Enter a city" id="city">
+     <form  search-city>
+        <input type="text" placeholder="Enter a city" id="city" required class="enter">
 
-        <input type="submit" Value="Search"/>
+        <input type="submit" Value="Search" class="search-button"/>
     
     </form>
 
   </header>
   <main>
-   <h1>
+    <div class="climate-data">
+
+   <h1 class="climate-city">
         Paris
     </h1>
 
-    <p>
+    <p class="climate-details">
         Monday 00:03, broken clouds
         <br/>
-        Humidity: 69%, Wind: 6.69km/h
+        Humidity:<strong> 69%</strong>, Wind: <strong> 6.69km/h</strong>
     </p>
 
-    <h2> ☁14°C</h2>
-
+    <div class="climate-container">
+      <div class="weather-icon">☁</div>
+      <div class="climate-temp">14</div>
+       <div class="climate-unit">°C</div>
+    </div>
+</div>
     <ul>
         <li>
             Sunday 🌥 </br>
