@@ -12,8 +12,8 @@
   <body>
 <div class="project-box">
      <header>
-     <form  search-city>
-        <input type="text" placeholder="Enter a city" id="city" required class="enter">
+     <form  search-city id="search-city">
+        <input type="text" placeholder="Enter a city" id="enter-city" required class="enter">
 
         <input type="submit" Value="Search" class="search-button"/>
     
@@ -23,7 +23,7 @@
   <main>
     <div class="climate-data">
 
-   <h1 class="climate-city">
+   <h1 class="climate-city" id="climate-city">
         Paris
     </h1>
 
@@ -35,7 +35,7 @@
 
     <div class="climate-container">
       <div class="weather-icon">☁</div>
-      <div class="climate-temp">14</div>
+      <div class="s">14</div>
        <div class="climate-unit">°C</div>
     </div>
 </div>
@@ -77,5 +77,7 @@
     </main>
     </footer>
     </div>
+    <script src="src/index.js">
+    </script>
   </body>
 </html>
