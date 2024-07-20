@@ -56,19 +56,21 @@ main {
   color: rgba(7, 65, 65, 0.977);
 }
 .climate-container {
-  display: flex;
+ display: flex;
+ 
 }
+
 .weather-icon {
   font-weight: 44px;
-  margin-top: 22px;
+  margin-top: 10px;
 }
 .climate-temp {
-  font-size: 88px;
+  font-size: 200px;
   font-weight: bold;
 }
 .climate-unit {
   margin-top: 20px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 28px;
 }
 footer {
