@@ -48,7 +48,7 @@ main {
   line-height: 48px;
 }
 .climate-details {
-  font-size: 16px;
+  font-size: 12px;
   color: rgba(4, 66, 71, 0.404);
   line-height: 20px;
 }
@@ -56,16 +56,16 @@ main {
   color: rgba(7, 65, 65, 0.977);
 }
 .climate-container {
- display: flex;
- 
+  display: inline-flex;
 }
 
 .weather-icon {
-  font-weight: 44px;
+  width: 50px;
+  height: 50px;
   margin-top: 10px;
 }
 .climate-temp {
-  font-size: 200px;
+  font-size: 400px;
   font-weight: bold;
 }
 .climate-unit {
