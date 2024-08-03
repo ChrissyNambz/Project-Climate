@@ -7,13 +7,17 @@ function refreshWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let icon=document.querySelector("#icon")
 
+  
+ 
   climateSearch.innerHTML = response.data.city;
   time.element.innerHTML = formatDate();
   descriptionElement.innerHTML = response.data.condition.description;
-  humidityElement.innerHTML = "${response.data.temperature.humidity}%";
-  windSpeedElement.innerHTML = "${response.data.wind.speed}km/h";
+  humidityElement.innerHTML = '${response.data.temperature.humidity}%';
+  windSpeedElement.innerHTML = '${response.data.wind.speed}km/h';
   temperatureElement.innerHTML = math.round(temperature);
+   icon.innerHTML ='<img src= "${response.data.condition.icon_url}"class="weather-icon">';
 }
 
 function formatDate(date) {
@@ -28,6 +32,7 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+
   let day = days[date.getDay()];
 
   if (minutes < 10) {
